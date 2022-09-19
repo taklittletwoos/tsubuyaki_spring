@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex_parent">
+                <div class="logo">
+                    <a th:href="@{/top}">DigTweet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section_inner">
+        <div class="container">
+            <h1>ログイン</h1>
+            <form class="login_form" th:action="@{/login}" method="POST">
+                <label for="username">mail：</label>
+                <input id="username" type="text" name="username">
+                <label for="password">pass：</label>
+                <input id="password" type="password" name="password">
+                <button type="submit">ログイン</button>
+            </form>
+        </div>
+    </div>
+    <footer class="flex_parent">
+        <p><small>&copy; tsubuyaki_spring</small></p>
+    </footer>
+</body>
+</html>
